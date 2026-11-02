@@ -1,2 +1,47 @@
 /* Project 1: write all of your styles in this file.
    Follow the layout, font and colour guide in the project brief. */
+
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding-left: 24px;
+    padding-right: 24px;
+}
+
+section {
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+
+.btn {
+    background-color: green;
+    color: white;
+    font-weight: bold;
+    border: none;
+    text-decoration: none;
+    border-radius: 8px;
+    padding: 12px 24px;
+}
+
+a.btn {
+    display: inline-block;
+}
+
+.btn:hover {
+    background-color: darkgreen;
+}
