@@ -150,7 +150,7 @@ thead {
 }
 
 /* Testimonial Name */
-.testimonial .name {
+.testimonial footer {
     font-size: 0.9rem;
     color: grey;
     font-style: normal;
