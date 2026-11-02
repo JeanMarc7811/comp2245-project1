@@ -2,12 +2,18 @@
    Follow the layout, font and colour guide in the project brief. */
 
 
+/* Project 1: Global Styles */
+
 * {
     box-sizing: border-box;
 }
 
 body {
     margin: 0;
+    font-family: "Inter", Arial, sans-serif;
+    font-size: 18px;
+    line-height: 1.6;
+    color: #1A202C;
 }
 
 img {
@@ -27,10 +33,35 @@ section {
     padding-bottom: 80px;
 }
 
+/* Headings and Logo */
+
+h1, h2, h3, .logo {
+    font-family: "Fraunces", Georgia, serif;
+    color: #22543D;
+}
+
+h1 {
+    font-size: 52px;
+}
+
+h2 {
+    font-size: 36px;
+}
+
+h3 {
+    font-size: 22px;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Buttons */
 
 .btn {
     background-color: #2F855A;
-    color: white;
+    color: #FFFFFF;
     font-weight: bold;
     border: none;
     text-decoration: none;
@@ -46,10 +77,10 @@ a.btn {
     background-color: #276749;
 }
 
-/*Header-secton*/
+/* Header Section */
 
 .site-header {
-    border-bottom: 1px solid lightgrey;
+    border-bottom: 1px solid #E2E8F0;
     padding: 16px 0;
 }
 
@@ -59,7 +90,6 @@ a.btn {
     align-items: center;
 }
 
-
 .nav-links {
     display: flex;
     gap: 24px;
@@ -67,22 +97,32 @@ a.btn {
     padding: 0;
 }
 
-
-.site-header a {
+.nav-links a {
+    color: #2D3748;
+    font-weight: bold;
     text-decoration: none;
 }
 
-.site-header a:hover {
+.nav-links a:hover {
+    color: #2F855A;
     text-decoration: underline;
 }
 
-/* Hero-Section */
+.site-header .logo {
+    text-decoration: none;
+}
+
+/* Hero Section */
+
+.hero {
+    background-color: #F0FFF4;
+}
+
 .hero .container {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 48px;
     align-items: center;
-    background-color: #2f855a;
 }
 
 .hero p {
@@ -90,7 +130,8 @@ a.btn {
     margin-bottom: 24px;
 }
 
-/* Why shop with us section */
+/* Features Section */
+
 .features h2 {
     text-align: center;
     margin-bottom: 48px;
@@ -105,10 +146,15 @@ a.btn {
 .feature {
     padding: 32px;
     border-radius: 12px;
+    background-color: #F7FAFC;
+}
+
+/* Visit Section */
+
+.visit {
     background-color: #F0FFF4;
 }
 
-/* Visit  the market section */
 .visit .container {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -117,6 +163,7 @@ a.btn {
 }
 
 /* Visit Table */
+
 table {
     width: 100%;
     border-collapse: collapse;
@@ -130,41 +177,41 @@ th,
 td {
     text-align: left;
     padding: 10px 12px;
-    border-bottom: 1px solid #f7fafc;
+    border-bottom: 1px solid #C6F6D5;
 }
 
 thead {
-    background-color: #2f855a;
-    color: white;
+    background-color: #2F855A;
+    color: #FFFFFF;
 }
 
 /* Testimonial */
+
 .testimonial {
     padding: 32px;
-    background-color: white;
-    border-left: 6px solid #2f855a;
+    background-color: #FFFFFF;
+    border-left: 6px solid #2F855A;
     border-radius: 0 12px 12px 0;
     margin: 0;
     font-style: italic;
     font-size: 1.1rem;
 }
 
-/* Testimonial Name */
 .testimonial footer {
-    font-size: 0.9rem;
-    color: grey;
+    font-size: 16px;
+    color: #4A5568;
     font-style: normal;
 }
 
+/* Signup Section */
 
-
-/* Join the mailing list Section */
-.newsletter h2,
-.newsletter p {
+.signup h2,
+.signup > .container > p {
     text-align: center;
 }
 
 /* Form */
+
 form {
     max-width: 520px;
     margin: 0 auto;
@@ -180,58 +227,56 @@ form input,
 form select {
     width: 100%;
     padding: 10px 12px;
-    border: 1px solid grey;
+    border: 1px solid #A0AEC0;
     border-radius: 8px;
     font: inherit;
-}
-
-/* Form Fields */
-form input,
-form select {
     margin-bottom: 16px;
 }
 
-/* Sign Up Button */
 form button {
     width: 100%;
 }
 
 /* Error Messages */
+
 .error {
-    color: #c53030;
+    color: #C53030;
     font-size: 15px;
     min-height: 1.2em;
 }
 
 /* Invalid Fields */
+
 form input[aria-invalid="true"],
 form select[aria-invalid="true"] {
-    border: 2px solid #a0aec0;
+    border: 2px solid #C53030;
 }
 
 /* Success Message */
+
 #form-message.success {
     max-width: 520px;
     margin: 0 auto;
     padding: 16px;
-    background-color: #c6f6d5;
-    color: #22543d;
+    background-color: #C6F6D5;
+    color: #22543D;
     font-weight: bold;
     border-radius: 8px;
 }
 
 /* Footer */
+
 .site-footer {
-    background-color: #22543d;
-    color: white;
+    background-color: #22543D;
+    color: #FFFFFF;
     padding: 32px 0;
+    font-size: 16px;
 }
 
 .site-footer .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    font-size: 16px;
 }
 
 .site-footer p {
@@ -239,9 +284,9 @@ form select[aria-invalid="true"] {
 }
 
 /* Responsive Design */
+
 @media (max-width: 768px) {
 
-    /* Headings */
     h1 {
         font-size: 40px;
     }
@@ -250,38 +295,28 @@ form select[aria-invalid="true"] {
         font-size: 30px;
     }
 
-    /* Section Spacing */
     section {
         padding-top: 48px;
         padding-bottom: 48px;
     }
 
-    /* Header */
-    .site-header .container {
-        flex-direction: column;
-        gap: 8px;
-    }
-
-    /* Footer */
+    .site-header .container,
     .site-footer .container {
         flex-direction: column;
         gap: 8px;
     }
 
-    
-
-    /* Hero Section */
-    .hero .container {
+    .hero .container,
+    .visit .container {
         grid-template-columns: 1fr;
     }
 
-    /* Features Section */
     .feature-list {
         grid-template-columns: 1fr;
     }
 
-    /* Visit Section */
-    .visit .container {
-        grid-template-columns: 1fr;
+    .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
     }
 }
